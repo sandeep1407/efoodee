@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.ServicesActivity">
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_margin="@dimen/val_textView_24sp"
+                  android:layout_marginTop="@dimen/val_textView_24sp"
+                  android:layout_height="wrap_content">
+
+        <RadioButton
+                android:id="@+id/btnVeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/veg"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/button_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:checked="true"
+                android:padding="@dimen/val_14dp"
+                android:textSize="16dp"/>
+
+        <RadioButton
+                android:id="@+id/btnNonVeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/val_4dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/non_veg"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:textAllCaps="false"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:padding="@dimen/val_14dp"
+                android:textColor="@color/colorGrey"
+                android:textSize="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+

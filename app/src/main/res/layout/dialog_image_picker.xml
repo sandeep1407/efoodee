@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#F4F1F0"
+              android:orientation="vertical">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:layout_margin="6dp"
+                    android:padding="@dimen/val_6dp"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="#F4F1F0"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/val_12dp"
+                    android:background="@null"
+                    android:id="@+id/iBtnCloseImagePickerDialog"
+                    android:layout_marginRight="@dimen/val_12dp"
+                    app:srcCompat="@drawable/ic_close"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/bg_round_fill_orange"
+                        android:gravity="center"
+                        android:id="@+id/ll_camera"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_camera_dialog"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/take_a_pic"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:id="@+id/ll_gallery"
+                        android:background="@drawable/round_white_bg"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/ic_gallery_dialog"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/from_gallery"
+                            android:textColor="@color/colorBrown"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/bg_round_border_orange"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/upload"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorOrange"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

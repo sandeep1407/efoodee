@@ -1,0 +1,149 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_margin="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/bank_details"
+                android:textColor="@color/colorOrange"
+                android:layout_marginTop="@dimen/val_8dp"
+                android:textSize="36sp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlAccNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etAccNumber"
+                        android:layout_width="match_parent"
+                        android:imeOptions="actionNext"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:hint="@string/account_number"
+                        android:inputType="numberSigned"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/val_textView_20sp"
+                        android:maxLength="18"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlAccReEnter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+            >
+
+                <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etAccReEnter"
+                        android:layout_width="match_parent"
+                        android:imeOptions="actionNext"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:hint="@string/reenter_account_number"
+                        android:inputType="number"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/val_textView_20sp"
+                        android:maxLength="18"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlIFSCCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+            >
+
+                <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etIFSCCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:hint="@string/ifsc_code"
+                        android:inputType="text"
+                        android:imeOptions="actionNext"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/val_textView_20sp"
+                        android:maxLength="11"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+            >
+
+                <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etBankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:hint="@string/bank_Name"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/val_textView_20sp"
+                        android:maxLength="30"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlBankBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+            >
+
+                <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etBankBranch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:hint="@string/branch"
+                        android:inputType="text"
+                        android:textSize="@dimen/val_textView_20sp"
+                        android:textColor="@color/text_color"
+                        android:imeOptions="actionDone"
+                        android:maxLength="80"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                    android:id="@+id/btnUpdateBankDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/val_30dp"
+                    android:background="@drawable/bg_round_fill_orange"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/update"
+                    android:textAllCaps="false"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

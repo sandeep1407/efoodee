@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/val_18dp"
+            android:fillViewport="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+            <Button
+                    android:layout_width="35dp"
+                    android:visibility="gone"
+                    android:layout_height="35dp"
+                    android:padding="8dp"
+                    android:background="@drawable/ic_back"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/val_30dp"
+                    android:text="@string/add_menu"
+                    android:textSize="35dp"
+                    android:textColor="@color/colorOrange"/>
+
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorOrange"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/added_menu_note"
+                android:textAlignment="center"
+                android:textSize="@dimen/val_30dp"/>
+
+        <Button
+                android:id="@+id/btnBackToHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/bg_round_border_orange"
+                android:text="@string/back_home"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorOrange"/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true"
+            android:scrollbars="none"
+>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:layout_margin="6dp"
+                    android:padding="@dimen/val_6dp"
+                    android:background="@color/colorWhite"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/val_16dp"
+                android:layout_marginRight="@dimen/val_16dp"
+                android:layout_marginTop="@dimen/val_30dp"
+                android:layout_marginBottom="@dimen/val_30dp"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/val_12dp"
+                    android:background="@null"
+                    android:id="@+id/iBtnCloseImagePickerDialog"
+                    android:layout_marginRight="@dimen/val_12dp"
+                    app:srcCompat="@drawable/ic_close"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Document View"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/val_textView_20sp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/val_10dp"
+                    android:id="@+id/txt_docName"
+                    android:drawablePadding="@dimen/val_4dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Document Name"
+                    android:drawableLeft="@drawable/ic_edit"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_margin="@dimen/val_10dp"
+                          android:background="@drawable/bg_border_light_grey" android:layout_height="200dp">
+
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                           android:src="@drawable/paneer_tikka"
+                           android:scaleType="fitXY"
+                           android:id="@+id/imageViewDoc"
+                           android:layout_gravity="center"
+                           android:layout_margin="@dimen/val_6dp"
+                />
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btnReplaceDoc"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/val_16dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorOrange"
+                    android:background="@drawable/bg_round_border_orange"
+                    android:text="Close"
+                    android:textAllCaps="false"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

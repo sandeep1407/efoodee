@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="6dp"
+              android:layout_marginRight="6dp"
+              android:layout_marginBottom="28dp"
+              android:orientation="vertical"
+              android:scrollbars="none">
+
+    <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="@dimen/val_12dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_back"/>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/add_menu"
+                        android:id="@+id/textViewTitle"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="30dp"/>
+
+                <TextView
+                        android:id="@+id/tvFromPrevious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/previous_menu"
+                        android:visibility="gone"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="16dp"/>
+
+                <TextView
+                        android:id="@+id/tvContd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/contd"
+                        android:visibility="gone"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:id="@+id/ll_menu_1"
+                          android:visibility="visible"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/name_of_menu"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="16dp"/>
+
+                <EditText
+                        android:id="@+id/etMenuNameEnglish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:textAllCaps="false"
+                        android:inputType="textPersonName"
+                        android:maxLength="50"
+                        android:imeOptions="actionNext"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:hint="Enter menu name(In english)"
+                        android:textSize="@dimen/val_textView_18sp"
+                        android:textColor="@color/text_color"
+
+                />
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorLightGrey"/>
+
+                <EditText
+                        android:id="@+id/etMenuNameHindi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:textAllCaps="false"
+                        android:inputType="textPersonName"
+                        android:maxLength="50"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:hint="Enter menu name(In native language)"
+                        android:textSize="@dimen/val_textView_18sp"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@color/colorLightGrey"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_description"
+                        android:textColor="@color/colorOrange"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:textSize="13sp"/>
+
+                <EditText
+                        android:id="@+id/etMenuDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textAllCaps="false"
+                        android:imeOptions="actionDone"
+                        android:maxLines="4"
+                        android:minLines="1"
+                        android:inputType="textMultiLine"
+                        android:maxLength="300"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_color"
+                        android:hint="Enter menu description">
+
+                </EditText>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@color/colorLightGrey"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/cusine"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="13sp"/>
+
+                <Spinner
+                        android:id="@+id/spCusine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/cusine_menu"
+                        android:layout_marginTop="10dp"></Spinner>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@color/colorLightGrey"/>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="@string/upload_menu_image"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/colorOrange"
+                            android:textSize="13sp"/>
+
+                    <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                 app:srcCompat="@drawable/ic_upload"
+                                 android:padding="@dimen/val_6dp"
+                                 android:layout_gravity="center"
+                                 android:visibility="gone"
+                                 android:id="@+id/iBtnUploadImage"
+                                 android:background="@null"
+                    />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+                                                        android:id="@+id/recyclerView_imagesupload"
+                                                        android:visibility="visible"
+                                                        android:scrollbars="none"
+                                                        android:layout_margin="@dimen/val_4dp"
+                                                        android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:background="@color/colorLightGrey"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/menu_type"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="13sp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    <Button
+                            android:id="@+id/btnVeg"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_round_fill_green"
+                            android:text="@string/veg"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp"/>
+
+                    <Button
+                            android:id="@+id/btnNonVeg"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/val_4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_round_border_grey"
+                            android:text="@string/non_veg"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="16dp"/>
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:background="@color/colorLightGrey"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:text="@string/service_type"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="13dp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    <Button
+                            android:id="@+id/btnDineIn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_round_fill_grey"
+                            android:text="@string/dine_in"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textAllCaps="false"
+                            android:enabled="false"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="16dp"/>
+
+                    <Button
+                            android:id="@+id/btnSelfPickup"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/val_4dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/bg_round_border_grey"
+                            android:text="@string/self_pickup"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="16dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    <Button
+                            android:id="@+id/btnSelfDelivery"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/bg_round_border_grey"
+                            android:text="@string/self_delivery"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="16dp"/>
+
+                    <Button
+                            android:id="@+id/btnMymaDelivery"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/val_4dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/bg_round_border_grey"
+                            android:text="@string/myma_delivery"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="16dp"/>
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:background="@color/colorLightGrey"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:text="@string/spicy"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="16dp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    <Button
+                            android:id="@+id/btnMild"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_round_fill_green"
+                            android:text="@string/mild"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp"/>
+
+                    <Button
+                            android:layout_width="0dp"
+                            android:id="@+id/btnMedium"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_round_border_grey"
+                            android:text="@string/medium"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="16dp"/>
+                    <Button
+                            android:id="@+id/btnHot"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/val_4dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:background="@drawable/bg_round_border_grey"
+                            android:text="@string/hot"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="16dp"/>
+                </LinearLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:background="@color/colorLightGrey"/>
+                <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/bg_round_fill_orange"
+                        android:text="@string/next"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp"/>
+
+            </LinearLayout>
+            <!--Menu Part Two-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:id="@+id/ll_menu_part2"
+                    android:layout_margin="@dimen/val_10dp"
+                    android:layout_height="match_parent"
+            >
+                <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:scrollbars="none"
+                        android:id="@+id/recyclerView_menuItems"
+                />
+
+                <include
+                        layout="@layout/custom_add_menu"
+                        android:layout_marginTop="@dimen/val_12dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                />
+                <ImageButton
+                        android:id="@+id/ivAddView"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/val_16dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/val_8dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bg_round_fill_orange"
+                        app:srcCompat="@drawable/ic_add_white"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:text="@string/total_price"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="13sp"/>
+
+
+                <EditText
+                        android:id="@+id/etTotalPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="@dimen/val_10dp"
+                        android:textAllCaps="false"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:textColor="@color/text_color"
+                        android:imeOptions="actionDone"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:hint="Enter total price"
+                        android:textSize="@dimen/val_textView_20sp"
+
+                />
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:text="@string/extra"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="13sp"/>
+
+                <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:scrollbars="none"
+                        android:id="@+id/recyclerView_menuItems_extra"
+                />
+
+                <include
+                        layout="@layout/customadd_menu_extra"
+                        android:layout_marginTop="@dimen/val_10dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                />
+
+                <ImageButton
+                        android:id="@+id/ivAddViewExtra"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/val_16dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/val_8dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bg_round_fill_orange"
+                        app:srcCompat="@drawable/ic_add_white"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/colorLightGrey"
+                />
+                <!--Max Meal Count -->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_weight="1"
+                            android:layout_alignParentLeft="true">
+
+
+                        <TextView
+                                android:id="@+id/tvMaxMealCountLable"
+                                android:text="Max Meal Count"
+                                android:layout_marginLeft="@dimen/val_12dp"
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="@dimen/val_8dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/colorOrange"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                    >
+
+
+                        <ImageButton
+                                android:id="@+id/ivminus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/val_6dp"
+                                android:background="@drawable/bg_round_fill_grey"
+                                app:srcCompat="@drawable/ic_remove"/>
+
+                        <TextView
+                                android:id="@+id/tvMealCountValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_round_border_grey"
+                                android:paddingLeft="25dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:paddingRight="25dp"
+                                android:textColor="@color/text_color"
+                                android:paddingTop="2dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:paddingBottom="2dp"
+                                android:text="30"
+                                android:textSize="@dimen/val_textView_16sp"
+                        />
+
+                        <ImageButton
+                                android:id="@+id/ivAdd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/val_6dp"
+                                android:background="@drawable/bg_round_fill_grey"
+                                app:srcCompat="@drawable/ic_add"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--*******END******-->
+                <!--Menu Action buttons -->
+                <Button
+                        android:id="@+id/btnPreviewMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/val_14dp"
+                        android:layout_marginRight="@dimen/val_4dp"
+                        android:layout_marginLeft="@dimen/val_4dp"
+                        android:background="@drawable/bg_round_border_orange"
+                        android:text="Preview"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="@dimen/val_textView_16sp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/val_14dp"
+                              android:layout_marginRight="@dimen/val_4dp"
+                              android:layout_marginLeft="@dimen/val_4dp">
+                    <Button
+                            android:id="@+id/btnSchedule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_round_fill_orange"
+                            android:text="@string/schedule"
+                            android:textAllCaps="false"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/val_4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/val_textView_16sp"/>
+
+                    <Button
+                            android:id="@+id/btnPublishNow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_round_fill_orange"
+                            android:text="Publish Now"
+                            android:textAllCaps="false"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/val_4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/val_textView_16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--Menu Part two End -->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

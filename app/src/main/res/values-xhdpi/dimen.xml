@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="otp_edit_ht">43dp</dimen>
+    <dimen name="otp_edit_wt">62dp</dimen>
+    <!--edit text sizes-->
+    <dimen name="opt_edit_txt_size">30sp</dimen>
+    <!--edit text sizes end-->
+</resources>

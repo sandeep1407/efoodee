@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".fragments.MyProfileFragment">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/colorOrange"
+            android:id="@+id/txt_welcome_user"
+            android:layout_margin="@dimen/val_16dp"
+            android:textSize="@dimen/val_textView_24sp"/>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/grid_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:numColumns="3"
+              android:horizontalSpacing="10dp"
+              android:verticalSpacing="10dp"
+              android:gravity="center"
+              android:stretchMode="columnWidth"
+    >
+    </GridView>
+
+</LinearLayout>

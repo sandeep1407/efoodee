@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true"
+            android:scrollbars="none"
+>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:layout_margin="6dp"
+                    android:padding="@dimen/val_6dp"
+                    android:background="@color/colorWhite"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/val_16dp"
+                android:layout_marginRight="@dimen/val_16dp"
+                android:layout_marginTop="@dimen/val_30dp"
+                android:layout_marginBottom="@dimen/val_30dp"
+                android:orientation="vertical">
+
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/myma_logo"
+                       android:layout_gravity="center"
+                       android:layout_margin="@dimen/val_6dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Thank you !Our representative will contact you shortly"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="16sp"/>
+
+
+            <Button
+                    android:id="@+id/btnBacktoHome"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/val_16dp"
+                    android:textColor="@color/colorGrey"
+                    android:background="@drawable/bg_round_border_orange"
+                    android:text="@string/backtohome"
+                    android:textAllCaps="false"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

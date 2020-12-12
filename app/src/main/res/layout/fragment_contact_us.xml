@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_margin="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/contact_myma"
+                android:gravity="center"
+                android:textColor="@color/colorOrange"
+                android:layout_marginTop="@dimen/val_8dp"
+                android:textSize="30sp"/>
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/myma_logo"
+                   android:layout_gravity="center"
+                   android:layout_margin="@dimen/val_6dp"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/write_us_at"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorOrange"
+                android:textSize="14sp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/inform_email"
+                android:textColor="@color/colorBrown"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="-- OR --"
+                android:textColor="@color/colorBrown"
+                android:textSize="18sp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/input_your_mobile"
+                android:textColor="@color/colorOrange"
+                android:textSize="14sp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/default_num"
+                android:textColor="@color/colorBrown"
+                android:textSize="18sp"/>
+
+        <Button
+                android:id="@+id/btnRequestCallback"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_height="50dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bg_round_fill_orange"
+                android:text="@string/request_a_call_back"
+                android:textAllCaps="false"
+        />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,461 @@
+<resources>
+    <string name="app_name">MYMA</string>
+    <string name="find_your_perfect_domain_idn">Find Your Perfect Domain / IDN</string>
+    <string name="search_here">Search Here ex.domain</string>
+    <string name="host_name_placeholder">Enter host name ex.www,mail.com etc.</string>
+    <string name="search_here_who_is">Search Here ex:test.com</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="order_by">Order By</string>
+
+    <string name="username">Username</string>
+    <string name="usernameoremail">Username or Email</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_one">
+        <u>Create new</u>
+    </string>
+    <string name="i_don_t_have_account_yet">I don\'t have account yet.</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email_address">Email Address</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="have_an_account">Already have a account?</string>
+
+    <string name="OpenSansBold">fonts/OpenSans-Bold.ttf</string>
+    <string name="OpenSansRegular">fonts/OpenSans-Regular.ttf</string>
+    <string name="OpenSansLight">fonts/OpenSans-Light.ttf</string>
+    <string name="OpenSansSemiBold">fonts/OpenSans-Semibold.ttf</string>
+
+    <string name="email_id_phone_number">Email ID/ Phone Number</string>
+    <string name="get_otp">get otp</string>
+    <string name="placeholder_raj_kumar">Raj Kumar</string>
+    <string name="placeholder_email">rajkumar1@dil.in</string>
+    <string name="register">Register</string>
+    <string name="manage_your_domain">Manage your Domain</string>
+    <string name="who_is">Who is</string>
+    <string name="who_is_detail">Who Is Detail</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="cart">Cart</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="session_invalid">Session is not valid</string>
+
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="domain_name">Domain Name:</string>
+    <string name="idn">IDN:</string>
+    <string name="name">Name:</string>
+    <string name="organization">Organization:</string>
+    <string name="city">City:</string>
+    <string name="state">State:</string>
+    <string name="postal_code">Postal Code:</string>
+    <string name="country">Country:</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="full_name">Full Name:</string>
+    <string name="address_hint">Address:</string>
+    <string name="phone">Phone:</string>
+    <string name="email_hint">Email:</string>
+    <string name="add_address">Add Address</string>
+    <string name="zip">Zip:</string>
+    <string name="no_address_message">You don\'t have any address information</string>
+    <string name="no_payment_method_message">You don\'t have any payment profile</string>
+    <string name="add_payment_method">Add Payment Method</string>
+    <string name="continue_str">Continue</string>
+    <string name="change_now">Change Now</string>
+    <string name="current_password">Current Password:</string>
+    <string name="confirm_password_hint">Confirm Password:</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="host_name">Host Name</string>
+    <string name="record_type">Record Type</string>
+    <string name="priority">Priority</string>
+    <string name="value">Value</string>
+    <string name="save">Save</string>
+    <string name="name_server2">Name Server2</string>
+    <string name="name_server1">Name Server1</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="mobile_number_short">Mobile number not be less than 10 digits.</string>
+    <string name="select_domain">Select Domain</string>
+    <string name="renewal_charge_per_year">Renewal Charge per Year</string>
+    <string name="amount">Amount</string>
+    <string name="gst">GST(18 %)</string>
+    <string name="wallet_amount">Wallet Amount</string>
+    <string name="payable_amount">Payable Amount(With GST):</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="indian">Indian</string>
+    <string name="non_indian">Non Indian</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="search_a_domain_name">Search a Domain Name</string>
+    <string name="search">Search</string>
+    <string name="to_continue_your_purchase">To Continue your purchase we need your address. We can change it anytime
+        later.
+    </string>
+    <string name="device_offline_message">No Internet Connection found.</string>
+    <string name="password_empty_message">password is empty</string>
+    <string name="password_short_message">Password is smaller than minimum length</string>
+    <string name="password_invalid_message">Password must be of min 8 char long in length with 1 digit(0-9) and 1
+        special character (!@#$%^&amp;*+=_)
+    </string>
+    <string name="login_failed_message">Login failed. Try again.</string>
+    <string name="idn_failed_message">IDN failed. Try again.</string>
+    <string name="username_empty_message">username is empty</string>
+    <string name="checkdomain_empty_message">Please insert menuDataPojo to search</string>
+    <string name="checklanguage_select_message">Select Language</string>
+    <string name="select_idn_suffix">Select domain suffix</string>
+    <string name="usename_not_valid_message">Username is not valid</string>
+    <string name="email_empty_message">Email is empty</string>
+    <string name="domain_empty_message">Domain name is empty</string>
+    <string name="email_invalid_message">Email is invalid</string>
+    <string name="domain_invalid_message">Domain is invalid</string>
+    <string name="first_name_empty_message">First name is empty</string>
+    <string name="last_name_empty_message">Last name is empty</string>
+    <string name="mobile_empty_message">Mobile number cannot be empty</string>
+    <string name="confirm_password_empty_message">confirm password is empty</string>
+    <string name="signup_failed_message">signup failed</string>
+    <string name="password_not_match_message">Passwords doesn\'t match</string>
+    <string name="OTP_not_match_message">OTP doesn\'t match</string>
+    <string name="check_availability">Check Availability</string>
+    <string name="register_domain_and_get_free_email_id">Register domain and get free email Id..</string>
+    <string name="get_password">Get password</string>
+    <string name="renew_domain">Renew Domain</string>
+    <string name="dns_records">DNS Records</string>
+    <string name="view">View</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="password_reset_failed">Password reset failed</string>
+    <string name="press_back_again">Please click Back again to exit</string>
+    <string name="name_server_1_blank">Name Server1 is blank</string>
+    <string name="name_server_2_blank">Name Server2 is blank</string>
+    <string name="my_cart">Cart</string>
+    <string name="update_nameserver">Update Nameserver</string>
+    <string name="update_contact_info">Update Contact Info</string>
+    <string name="nameserver_error">NameServer retrieve failed</string>
+    <string name="contact_info_failed">Contact Info retrieve failed</string>
+    <string name="domain_name_empty">Domain Name is empty</string>
+    <string name="organization_empty_message">Organization is empty</string>
+    <string name="phone_number_empty_message">Phone number is empty</string>
+    <string name="dial_code_empty_message">Dialing code is empty</string>
+    <string name="country_code_invalid">Country code is invalid</string>
+    <string name="country_code_emtpy_message">Country code is empty</string>
+    <string name="postal_code_empty_message">Postal code is empty</string>
+    <string name="state_empty_message">State is empty</string>
+    <string name="city_empty_message">City is empty</string>
+    <string name="street_empty_message">Street is empty</string>
+    <string name="client_name_emtpy_message">Client name is empty</string>
+    <string name="dial_code_invalid">Dialing code is invalid</string>
+    <string name="dns_record_insertion_failed">Dns record insertion failed</string>
+    <string name="dns_record_insert_success">Dns record inserted</string>
+    <string name="dns_record_update_success">Dns record updated successfully</string>
+    <string name="dns_record_update_failed">DNS record update failed</string>
+    <string name="choose_dns_record_type">Choose DNS Record Type</string>
+    <string name="alert">Alert</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="add_record">Add Record</string>
+    <string name="are_yout_logout">Are you sure you want to logout?</string>
+    <string name="are_you_sure_delete_file">Are you sure you want to delete this file?</string>
+    <string name="session_invalid_string">It seems your session is not valid, Please Login again</string>
+    <string name="host_name_empty">Host name is empty</string>
+    <string name="record_type_not_selected">Record type is not selected</string>
+    <string name="priority_empty">Priority is empty</string>
+    <string name="priority_invalid">Priority value is not valid. Choose value between 1 - 100</string>
+    <string name="value_empty">Value is empty</string>
+    <string name="update_name_server">Update Name Server</string>
+    <string name="shopping_cart">Shopping Cart</string>
+
+    <string name="type_placeholder">Type : %s</string>
+    <string name="value_placeholder">Value : %s</string>
+    <string name="priority_placeholder">Priority : %s</string>
+    <string name="ok">Ok</string>
+    <string name="dns_record_in_progress">DNS Record already in process</string>
+    <string name="new_password_empty">New password is empty</string>
+    <string name="old_password_empty">Current password is empty</string>
+    <string name="old_password_not_matched">Current password not matched</string>
+    <string name="password_change_success">Password changed Successfully</string>
+    <string name="password_changed_failed">Password changed failed</string>
+    <string name="is_available">is Available</string>
+    <string name="buy_domain">Buy Domain</string>
+    <string name="discount_offered">Discount Offered</string>
+    <string name="price">Price</string>
+    <string name="price_after_discount">Price After Discount</string>
+    <string name="discount">Discount</string>
+    <string name="proceed">Proceed</string>
+    <string name="input_selected_language">Enter input in selected language</string>
+    <string name="invalid_input">Invalid input</string>s
+    <string name="domain_list_empty">Domains List is empty</string>
+    <string name="dns_records_empty">Dns Records are empty</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="register_domain">Register Domain</string>
+    <string name="domain_registratin_failed">Domain Registration failed</string>
+    <string name="renew_under_process_message">Please wait. Renew is under process</string>
+    <string name="use_wallet_amount">Use your wallet amount %s %s</string>
+    <string name="currency_symbol">₹</string>
+    <string name="choose_renew_period">Choose renew period</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="payment_failed">Payment Failed</string>
+    <string name="payment">Payment</string>
+    <string name="selectlanguage">Select Language</string>
+    <string name="mobiledigits">1234567890</string>
+    <string name="selectdomain">Select Domain</string>
+    <string name="selectLanguage">Select Language</string>
+    <string name="domains_unavailable">Domains Unavailable</string>
+    <string name="permission_alert_dialog_title">Alert</string>
+    <string name="permission_dialog_message">Permission to access the SMS is required for this app to receive OTP.
+    </string>
+    <string name="action_ok">Ok</string>
+    <string name="remove">Remove</string>
+    <string name="charactersonly">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="numbersonly">0123456789</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="slide_1_title">Hello Demo App</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="reenter_password">Renter Password</string>
+    <string-array name="renew_period">
+        <item>1 Year</item>
+        <item>2 Year</item>
+        <item>3 Year</item>
+        <item>4 Year</item>
+        <item>5 Year</item>
+    </string-array>
+
+
+    <string name="mobile_number">Mobile Number</string>
+    <string name="default_notification_channel_id">100</string>
+    <string name="get_started">Get Started</string>
+    <string name="password">Password</string>
+    <string name="order">Order</string>
+    <string name="new_password">New Password</string>
+    <string name="re_enter_password">Re-enter New Password</string>
+    <string name="confirm_password">Re-enter Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="forgot_password2">Forgot\nPassword</string>
+    <string name="login">Login</string>
+    <string name="confirm">Confirm</string>
+    <string name="pin">Pin No.</string>
+    <string name="service">Service</string>
+    <string name="cooking">Cooking</string>
+    <string name="only_delivery">Only Delivery</string>
+    <string name="cooking_self_delivery">Cooking + Self Delivery</string>
+    <string name="service_type">Service Type</string>
+    <string name="your_name">Your Name</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="regster">Register</string>
+    <string name="resend_code">Resend Verification Code</string>
+    <string name="continuebtn">Continue</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password2">Reset\nPassword</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="welcome_note1">Welcome in Myma Family</string>
+    <string name="welcome_note2">We are happy to have you in Myma family. This will be new start for us. Please fill
+        require details.
+    </string>
+    <string name="enter_verification_code">Please enter 4 digit code sent to</string>
+    <string name="enter_register_number">Please enter your registered Mobile Number</string>
+    <string name="check_policy">By continuing. I confirm that i have read and agree to the <u>Terms and Conditions</u> and
+        <u>Privacy Policy</u>
+    </string>
+    <string name="verification">Verification</string>
+    <string name="dine_in">Dine In</string>
+    <string name="register_on_fssai">I\'m registered on FSSAI</string>
+    <string name="need_help">Need Help</string>
+    <string name="food_safety_note1">Food Safety and Standards</string>
+    <string name="cooking_note1">Please provide FSSAI Reg/License number</string>
+    <string name="food_safety_note2">Registration with Food Safety and Standards is required for selling food</string>
+    <string name="FSSAI_Reg_License">FSSAI Registration/License</string>
+    <string name="Upload_FSSAI_Reg_License">Upload Registration/License</string>
+    <string name="expiry_on">Expiry on</string>
+    <string name="Reg_License_no">Registration/License No.</string>
+    <string name="food_business_regis">Food Business Registration</string>
+    <string name="food_business_note">We will contact you and help you through the process to get registered with Food
+        Safety and Standards
+    </string>
+    <string name="otp_sent_success">Otp sent successfully.</string>
+    <string name="otp_verfied">Otp verified successfully</string>
+    <string name="otp_failed">Otp authentication failed</string>
+    <string name="title_activity_dummy___bottom">Dummy_Activity_Bottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_dummy_navigation">DummyNavigationActivity</string>
+    <string name="nav_header_title">Kavya</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="add_menu">Add Menu</string>
+    <string name="my_orders">My Orders</string>
+    <string name="inbox">Inbox</string>
+    <string name="account">My Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="finish">Finish</string>
+    <string name="upload">Upload</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="take_a_pic">Take a picture</string>
+
+
+    <string name="communication_pref">Communication Preferences</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="phone_">Phone</string>
+    <string name="sms">Sms</string>
+    <string name="bicycle">Bicycle</string>
+    <string name="bike">Bike</string>
+    <string name="driving_lic">Driving License</string>
+    <string name="bike_rc">Bike RC</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="deliverly_area_limit">Deliverly area limit</string>
+    <string name="area_limit1">0"-"1 km</string>
+    <string name="area_limit2">0"-"3 km</string>
+    <string name="area_limit3">0"-"5 km</string>
+    <string name="upload_below_document">Upload below document</string>
+    <string name="area_limit4">5+ km</string>
+    <string name="pan_card">Pan Card</string>
+    <string name="aadhar_card">Aadhar Card</string>
+    <string name="communication_pref_note2">Tick the type of communication you want to receive</string>
+    <string name="communication_pref_note">Please let us know all the ways you would like to hear from us:</string>
+    <string name="about_myma">About Myma</string>
+    <string name="dummy_myma">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+        but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+        1960s with the release of Letraset sheets containing Lorem Ipsum passages
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </string>
+    <string name="dummy_myma_medium_length">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book.
+    </string>
+    <string name="language">Language</string>
+    <string name="Marathi">Marathi</string>
+    <string name="inform_email">info@mymameals.com</string>
+    <string name="english">English</string>
+    <string name="Hindi">Hindi</string>
+    <string name="faq">FAQ</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="submit">Submit</string>
+    <string name="termandcondition">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact_myma">Contact Myma</string>
+    <string name="write_us_at">Write to us at</string>
+    <string name="default_num">9881717342</string>
+    <string name="input_your_mobile">Input your mobile number for call back</string>
+    <string name="request_a_call_back">Request a call back</string>
+    <string name="backtohome">Back to home</string>
+    <string name="myma_guilines">Myma Guidelines</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="account_number">Enter Account Number</string>
+    <string name="reenter_account_number">Re-Enter Account Number</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="bank_Name">Bank Name</string>
+    <string name="branch">Branch</string>
+    <string name="profile">Profile</string>
+    <string name="my_speciality">My Speciality</string>
+    <string name="my_food_gallery">My Food Gallery</string>
+    <string name="pincode">PinCode</string>
+    <string name="your_location_on_map">Your Location on Map</string>
+    <string name="mobile_no_alternate">Alternate Number</string>
+    <string name="native_address">Your Native Address</string>
+    <string name="kitchen_type">Kitchen Type</string>
+    <string name="pure_vegetrian">Pure Veg</string>
+    <string name="non_vegetrian">Non Veg</string>
+    <string name="upload_kitchen_photos">Upload Kitchen Photos</string>
+    <string name="upload_dine_in_photos">Upload Dine In Photos</string>
+    <string name="reviews">Reviews</string>
+    <string-array name="menu_string">
+        <item>Add Menu</item>
+        <item>Edit Menu</item>
+        <item>All Menu</item>
+        <item>My Orders</item>
+        <item>My Earnings</item>
+        <item>Payments</item>
+        <item>Services Offered</item>
+        <item>Reviews</item>
+        <item>Bank Details</item>
+    </string-array>
+
+    <string-array name="cusine_menu">
+        <item>Maharastrian</item>
+    </string-array>
+
+
+    <string name="schedule_menu_on">Schedule Menu on</string>
+    <string name="schedule">Schedule</string>
+    <string name="dinner">Dinner</string>
+    <string name="hurray">Hurray!!</string>
+    <string name="lunch">Lunch</string>
+    <string name="previous_menu">From Previous</string>
+    <string name="name_of_menu">Name of Menu</string>
+    <string name="menu_description">Menu Description/intro</string>
+    <string name="menu_type">Menu Type</string>
+    <string name="veg">Pure Veg</string>
+    <string name="spicy">Spicy</string>
+    <string name="mild">Mild</string>
+    <string name="medium">Medium</string>
+    <string name="hot">Hot</string>
+    <string name="self_pickup">Self Pickup</string>
+    <string name="self_delivery">Self Delivery</string>
+    <string name="myma_delivery">Myma Delivery</string>
+    <string name="non_veg">Non Veg</string>
+    <string name="contd">Contd..</string>
+    <string name="cusine">Cusine</string>
+    <string name="current">Current</string>
+    <string name="recent">Recent</string>
+    <string name="upload_menu_image">Upload Menu Images</string>
+    <string name="rate_us">Please rate your experience</string>
+    <string name="add_other_order_to_cuurent_route">Add other orders\nto Cuurent Route</string>
+    <string name="your_menu">Your Menu</string>
+    <string name="missed">Missed</string>
+    <string name="completed">Completed</string>
+    <string name="pending">Pending</string>
+
+
+    <string name="add">Add</string>
+    <string name="deliver">Deliver</string>
+    <string name="call_customer">Call Customer</string>
+    <string name="unable_to_deliver">Unable to\nDeliver</string>
+    <string name="enter_delivery_otp">Please enter delivery OTP received by Customer</string>
+    <string name="delivery_otp">Delivery OTP</string>
+    <string name="notification">Notification</string>
+    <string name="message">Message</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="my_earnings">My Earnings</string>
+    <string name="current_month">Current Month</string>
+    <string name="lifetime">Lifetime</string>
+    <string name="payment_detail">Payment Details</string>
+    <string name="request_payment">Request Payment</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="RS">\u20B9</string>
+    <string name="upload_photos">Upload Photos</string>
+    <string name="rate_the_dish">Rate the dish</string>
+    <string name="share_your_experience">Write about your experience</string>
+    <string name="extra">Extra</string>
+    <string name="total_price">Total Price</string>
+    <string name="order_closing_time">Order closing time</string>
+    <string name="publish_menu_for">Publish Menu for</string>
+    <string name="publish_now">Publish Now</string>
+    <string name="schedule_time">Schedule Time</string>
+    <string name="schedule_flag">Schedule</string>
+    <string name="publish_flag">Publish</string>
+    <string name="added_menu_note">You have\nsuccessfully\nadded your\nmenu</string>
+    <string name="back_home">Back to Home</string>
+    <string name="selector_note">Select maximum 4 days</string>
+    <string name="selector_note2">Minimum 1 day should be Selected</string>
+    <string name="replace_doc">Replace Document</string>
+    <string name="Biography">Please tell us about you</string>
+    <string name="surName">Surname</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="kitchen_photos">Kitchen Photos</string>
+    <string name="home">Home</string>
+    <string name="all_menu">All Menu</string>
+    <string name="meal_serving_time">Meal Serving Time</string>
+    <string name="no_maps">No Map is available</string>
+
+</resources>

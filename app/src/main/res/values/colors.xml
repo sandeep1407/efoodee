@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f25627</color>
+    <color name="colorPrimaryDark">#e23e0d</color>
+
+    <!-- App Components Color-->
+    <color name="toolbar_black">#2e353d</color>
+    <color name="placeholder_black">#484848</color>
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="green">#00af45</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="red">#ff0000</color>
+    <color name="primary_60">#993F51B5</color>
+    <color name="primary_80">#333F51B5</color>
+    <color name="primary_90">#1A3F51B5</color>
+    <color name="white_60">#CCFFFFFF</color>
+    <color name="black_20">#E6000000</color>
+    <color name="white_95">#0DFFFFFF</color>
+    <color name="white_20">#CCFFFFFF</color>
+    <color name="nav_bg_start">#7cc269</color>
+    <color name="nav_bg_end">#0090bf</color>
+    <color name="white_80">#33FFFFFF</color>
+    <color name="off_white">#f3f3f3</color>
+    <color name="gray">#5f5f5f</color>
+    <color name="light_grey">#f5f2f1</color>
+    <color name="light_oragnge">#f7997d</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="text_color">#462f29</color>
+
+    <color name="theme_red">#ec3338</color>
+    <color name="textView_dim_color">#9b9b9b</color>
+    <color name="view_horizontal_color">#cdcdcd</color>
+    <color name="filter_result_value_color">#999999</color>
+    <color name="toolbar_bg_color">#2e353b</color>
+
+    <color name="bg_manage_domain">#f7f7f7</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">@color/light_oragnge</color>
+    <color name="dot_dark_screen2">@color/light_oragnge</color>
+    <color name="dot_dark_screen3">@color/light_oragnge</color>
+    <color name="dot_dark_screen4">@color/light_oragnge</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">@color/white</color>
+    <color name="dot_light_screen2">@color/white</color>
+    <color name="dot_light_screen3">@color/white</color>
+    <color name="dot_light_screen4">@color/white</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="colorAccent">#F15526</color>
+    <color name="colorOrange">#F15526</color>
+    <color name="colorGrey">#777777</color>
+    <color name="lightBlack">#333333</color>
+    <color name="colorLightGrey">#DCDBDB</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBrown">#452E28</color>
+    <color name="colorDarkGrey">#989898</color>
+</resources>

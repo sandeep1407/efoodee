@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/custom_layout_extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:layout_margin="@dimen/val_2dp"
+                  android:padding="2dp">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp">
+
+            <LinearLayout
+                    android:id="@+id/llMain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                <ImageView
+                        android:id="@+id/ivCancelItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_round_fill_grey"
+                        android:padding="8dp"
+                        app:srcCompat="@drawable/ic_close"/>
+
+                <TextView
+                        android:id="@+id/tvItemExtra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/val_12dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/text_color"
+                        android:text="Item 1"
+                        android:singleLine="true"
+                        android:maxLength="30"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="right|center">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RS"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginRight="@dimen/val_8dp"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:id="@+id/tvRupeesExtra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/val_8dp"
+                    android:text="10"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:maxLength="5"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/val_textView_18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:background="@color/light_grey"
+          android:layout_margin="@dimen/val_2dp"
+          android:layout_width="match_parent" android:layout_height="0.5dp">
+
+    </View>
+</LinearLayout>

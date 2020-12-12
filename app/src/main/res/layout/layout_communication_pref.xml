@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="match_parent"
+                android:layout_width="match_parent">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_margin="6dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             app:srcCompat="@drawable/ic_back"
+                             android:background="@null"
+                             android:padding="@dimen/val_4dp"
+                             android:layout_margin="@dimen/val_6dp"
+                             android:id="@+id/iBtn_CommuncationBack"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/communication_pref"
+                        android:textColor="@color/colorOrange"
+                        android:layout_marginTop="@dimen/val_8dp"
+                        android:textSize="36sp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/communication_pref_note"
+                        android:textColor="@color/text_color"
+                        android:layout_marginBottom="@dimen/val_12dp"
+                        android:textSize="@dimen/val_textView_20sp"/>
+
+
+                <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/chk_push_notification"
+                        android:layout_height="wrap_content"
+                        android:checked="true" android:textSize="18sp"
+                        android:textColor="@color/text_color"
+                        android:clickable="false"
+                        android:enabled="false"
+                        android:layout_marginBottom="@dimen/val_12dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_marginLeft="@dimen/val_8dp"
+                        android:text="@string/push_notification"/>
+
+                <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:id="@+id/chk_phone"
+                        android:textSize="18sp"
+                        android:clickable="false"
+                        android:enabled="false"
+                        android:layout_marginBottom="@dimen/val_12dp"
+                        android:textColor="@color/text_color"
+                        android:layout_marginLeft="@dimen/val_8dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Phone"/>
+
+                <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:textSize="18sp"
+                        android:clickable="false"
+                        android:enabled="false"
+                        android:layout_marginBottom="@dimen/val_12dp"
+                        android:id="@+id/chk_sms"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_marginLeft="@dimen/val_8dp"
+                        android:text="@string/sms"/>
+
+                <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textSize="18sp"
+                        android:id="@+id/chk_email"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_marginLeft="@dimen/val_8dp"
+                        android:layout_marginBottom="@dimen/val_12dp"
+                        android:textColor="@color/text_color"
+                        android:text="@string/email"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:text="@string/communication_pref_note2"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp"/>
+
+
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center"
+                    android:id="@+id/txt_tandc"
+                    android:layout_marginBottom="20dp"
+                    android:layout_above="@id/btnNext"
+                    android:textSize="@dimen/val_textView_12sp"
+                    android:text="@string/check_policy"
+                    android:textColor="@color/gray"/>
+            <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_round_fill_orange"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+    </ScrollView>
+    <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+    </FrameLayout>
+</RelativeLayout>

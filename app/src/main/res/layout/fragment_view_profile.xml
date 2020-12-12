@@ -1,0 +1,254 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_margin="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/profile"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorOrange"
+                    android:layout_marginTop="@dimen/val_8dp"
+                    android:textSize="36sp"/>
+
+            <ImageButton android:layout_width="wrap_content"
+                         app:srcCompat="@drawable/ic_edit_black_24dp"
+                         android:padding="@dimen/val_10dp"
+                         android:id="@+id/iBtn_editProfile"
+                         android:layout_gravity="bottom"
+                         android:background="@null"
+                         android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="@dimen/val_6dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_user"
+        />
+
+        <TextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="User Name"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/val_8dp"
+                android:textSize="20sp"/>
+
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Kohlapur"
+                    android:id="@+id/txt_my_nativeplace"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_margin="@dimen/val_4dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="18sp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="4.5"
+                    android:id="@+id/txt_ratings"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:drawableLeft="@drawable/ic_star_black_24dp"
+                    android:drawablePadding="@dimen/val_2dp"
+                    android:layout_margin="@dimen/val_4dp"
+                    android:textColor="@color/green"
+                    android:textSize="19sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+                      android:id="@+id/ll_review"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="0 Reviews"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_show_reviews"
+                    android:background="@drawable/bg_round_border_orange"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/val_4dp"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="14sp"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="0 Followers"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_show_followers"
+                    android:background="@drawable/bg_round_border_orange"
+                    android:layout_margin="@dimen/val_4dp"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="14sp"/>
+
+        </LinearLayout>
+        <!--About Me and Dish Text -->
+        <TextView
+                android:id="@+id/txt_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/dummy_myma_medium_length"
+                android:textColor="@color/colorBrown"
+                android:textSize="18sp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:layout_marginTop="@dimen/val_8dp"
+              android:background="@color/light_grey">
+
+        </View>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/my_speciality"
+                android:textColor="@color/colorOrange"
+                android:textSize="13sp"/>
+
+        <TextView
+                android:id="@+id/txt_my_speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Mahrathi - Kohlapuri"
+                android:textColor="@color/colorBrown"
+                android:textSize="20sp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:layout_marginTop="@dimen/val_8dp"
+              android:background="@color/light_grey">
+
+        </View>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/kitchen_type"
+                android:textColor="@color/colorOrange"
+                android:textSize="13sp"/>
+
+        <TextView
+                android:id="@+id/txt_kitchen_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Veg - NonVeg"
+                android:textColor="@color/colorBrown"
+                android:textSize="20sp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:layout_marginTop="@dimen/val_8dp"
+              android:background="@color/light_grey">
+
+        </View>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/my_food_gallery"
+                android:visibility="gone"
+                android:textColor="@color/colorOrange"
+                android:textSize="13sp"/>
+
+        <GridView
+                android:id="@+id/grid_view_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="auto_fit"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/val_10dp"
+                android:stretchMode="columnWidth">
+
+        </GridView>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/kitchen_photos"
+                android:textColor="@color/colorOrange"
+                android:textSize="13sp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/lableNo_Kitchen_Pics"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="No Kitchen Photos available right now! Please add in edit profile section."
+                android:visibility="gone"
+                android:textColor="@color/text_color"
+                android:textSize="13sp"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/grid_view_kitchenPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="auto_fit"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/val_10dp"
+                android:stretchMode="columnWidth">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/val_8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/cooking_self_delivery"
+                android:textColor="@color/colorOrange"
+                android:textSize="30sp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/val_8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/vehicle_type"
+                android:textColor="@color/colorOrange"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_border_grey"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingTop="10dp"
+                    android:textAllCaps="false"
+                    android:paddingBottom="10dp"
+                    android:text="@string/bicycle"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp"/>
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_round_fill_green"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/bike"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/val_12dp"
+                android:background="@color/colorLightGrey"/>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/deliverly_area_limit"
+                android:textColor="@color/colorOrange"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round_fill_green"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingTop="10dp"
+                        android:textAllCaps="false"
+                        android:paddingBottom="10dp"
+                        android:layout_marginRight="6dp"
+                        android:text="@string/area_limit1"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round_border_grey"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAllCaps="false"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="6dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/area_limit2"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="@dimen/val_12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round_border_grey"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/area_limit3"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="14sp"/>
+
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_round_border_grey"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textAllCaps="false"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/area_limit4"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="14sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/val_12dp"
+                android:background="@color/colorLightGrey"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/upload_below_document"
+                android:textColor="@color/colorOrange"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_round_fill_green"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_marginRight="@dimen/val_8dp"
+                    android:text="@string/driving_lic"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_round_fill_grey"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_marginRight="@dimen/val_8dp"
+                    android:text="@string/view"
+                    android:textSize="10sp"/>
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_round_fill_grey"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" android:fontFamily="@font/montserrat_medium"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/delete"
+                    android:textSize="10sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_round_fill_green"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="@dimen/val_8dp"
+                    android:text="@string/bike_rc"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_round_fill_grey"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textAllCaps="false"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_marginRight="@dimen/val_8dp"
+                    android:text="@string/view"
+                    android:textSize="10sp"/>
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/delete"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_round_fill_grey"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btnPancard"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_border_grey"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/pan_card"
+                android:textAllCaps="false"
+                android:textColor="@color/colorGrey"/>
+        <Button
+                android:id="@+id/btnAadharCard"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_border_grey"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/aadhar_card"
+                android:textAllCaps="false"
+                android:textColor="@color/colorGrey"/>
+
+
+        <Button
+                android:id="@+id/btnNext_Cooking_Delivery"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="@dimen/val_16dp"
+                android:background="@drawable/bg_round_fill_orange"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

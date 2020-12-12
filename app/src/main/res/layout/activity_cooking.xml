@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:id="@+id/scCookingDes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="18dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/cooking1"
+                tools:context=".MainActivity">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/val_30dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/cooking"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="35sp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/welcome_note2"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="85dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_fssai"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:gravity="center"
+                        android:text="@string/food_safety_note1"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="22sp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="@string/food_safety_note2"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="14sp"/>
+
+                <Button
+                        android:id="@+id/btnCookingSelfDelivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="45dp"
+                        android:background="@drawable/bg_round_fill_orange"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/register_on_fssai"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"/>
+
+                <Button
+                        android:id="@+id/btnOnlyDelivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_round_fill_orange"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/need_help"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            android:id="@+id/rlRegForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/val_30dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/cooking"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="35sp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/val_30dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/cooking_note1"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="18sp"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlRegLicenseNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etRegLicenseNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="@string/Reg_License_no"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="10"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tlExpiryOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etExpiryOn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="@string/expiry_on"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="10"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/Upload_FSSAI_Reg_License"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp"/>
+
+            <Button
+                    android:id="@+id/btnFSSAIReglicense"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_round_border_grey"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/FSSAI_Reg_License"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorGrey"/>
+
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_round_fill_orange"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/next"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+            android:id="@+id/scFoodBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="18dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:context=".MainActivity">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/val_30dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/food_business_regis"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="35sp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="85dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_fssai"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:gravity="center"
+                        android:text="@string/food_safety_note1"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="22sp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="@string/food_safety_note2"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="14sp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="130dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="@string/food_business_note"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="14sp"/>
+
+
+                <Button
+                        android:id="@+id/btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_round_fill_orange"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/finish"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

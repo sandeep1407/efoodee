@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_margin="16dp"
+              tools:context=".activities.RegistrationActivity">
+    <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <!--First View On Registration-->
+            <RelativeLayout
+                    android:visibility="visible"
+                    android:id="@+id/rlRegisterPage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22sp"
+                        android:id="@+id/ll_label"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/regster"
+                            android:textColor="@color/colorOrange"
+                            android:textSize="36sp"/>
+
+                    <ImageButton
+                            android:id="@+id/ibtnRegisterClose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:padding="8dp"
+                            app:srcCompat="@drawable/ic_close"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="180dp"
+                        android:layout_below="@id/ll_label"
+                        android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tlMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp">
+
+                        <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/etMobileNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="@string/mobile_number"
+                                android:textSize="@dimen/val_textView_20sp"
+                                android:inputType="number"
+                                android:maxLength="10"/>
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tlPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            app:passwordToggleEnabled="true">
+
+                        <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/etPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="@string/password"
+                                android:textSize="@dimen/val_textView_20sp"
+                                android:inputType="textPassword"
+                                android:maxLength="20"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tlConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            app:passwordToggleEnabled="true">
+
+                        <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/etConfirmPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="@string/confirm_password"
+                                android:textSize="@dimen/val_textView_20sp"
+                                android:inputType="textPassword"
+                                android:maxLength="20"/>
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                            android:id="@+id/tvCheckPolicy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/check_policy"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorGrey"/>
+
+
+                    <Button
+                            android:id="@+id/btnRegisterPage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/bg_round_fill_orange"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/regster"
+                            android:textAllCaps="false"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- End First Screen 1-->
+            <!--Second Screen -->
+            <RelativeLayout
+                    android:id="@+id/rlRegisterPage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    tools:context=".MainActivity">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22sp"
+                        android:id="@+id/ll_lable_welc"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/welcome_note1"
+                            android:textColor="@color/colorOrange"
+                            android:textSize="36sp"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/welcome_note2"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_lable_welc"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/val_4dp"
+                        android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="wrap_content">
+                        <Spinner
+                                android:id="@+id/spinner1"
+                                android:layout_width="100dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/val_4dp"
+                                android:layout_marginRight="@dimen/val_4dp"
+                                android:layout_height="50dp"
+                        >
+                        </Spinner>
+                        <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tlYourName"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/etYourName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:hint="@string/first_name"
+                                    android:inputType="textPersonName"
+                                    android:imeOptions="actionNext"
+                                    android:textSize="@dimen/val_textView_20sp"
+                                    android:textColor="@color/text_color"
+                                    android:maxLength="20"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <!--New Layout-->
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tlMiddleName"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginRight="@dimen/val_4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/etMiddleNAme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:hint="@string/middle_name"
+                                    android:inputType="textPersonName"
+                                    android:imeOptions="actionNext"
+                                    android:textSize="@dimen/val_textView_20sp"
+                                    android:textColor="@color/text_color"
+                                    android:maxLength="20"/>
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tlSurNAme"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="@dimen/val_4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/etSurName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:hint="@string/surName"
+                                    android:inputType="textPersonName"
+                                    android:imeOptions="actionNext"
+                                    android:textSize="@dimen/val_textView_20sp"
+                                    android:textColor="@color/text_color"
+                                    android:maxLength="20"/>
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tlEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                    >
+                        <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/etEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="@string/email"
+                                android:textSize="@dimen/val_textView_20sp"
+                                android:textColor="@color/text_color"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="40"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tlAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                    >
+                        <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/etAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="Address Line 1"
+                                android:imeOptions="actionNext"
+                                android:textSize="@dimen/val_textView_20sp"
+                                android:textColor="@color/text_color"
+                                android:inputType="textPostalAddress"
+                                android:maxLength="30"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/etAddressLine2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:hint="Address Line 2"
+                            android:imeOptions="actionNext"
+                            android:textSize="@dimen/val_textView_20sp"
+                            android:textColor="@color/text_color"
+                            android:layout_marginTop="@dimen/val_4dp"
+                            android:inputType="textPostalAddress"
+                            android:maxLength="30"/>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/val_16dp"
+                            android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/etAddressLocality"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="City"
+                                android:layout_weight="1"
+                                android:imeOptions="actionNext"
+                                android:textSize="@dimen/val_textView_20sp"
+                                android:textColor="@color/text_color"
+                                android:layout_marginTop="@dimen/val_4dp"
+                                android:inputType="textPostalAddress"
+                                android:maxLength="20"/>
+                        <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/etAddressPinCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="Postal Code"
+                                android:layout_weight="1"
+                                android:imeOptions="actionNext"
+                                android:textSize="@dimen/val_textView_20sp"
+                                android:textColor="@color/text_color"
+                                android:layout_marginTop="@dimen/val_4dp"
+                                android:inputType="number"
+                                android:maxLength="6"/>
+                    </LinearLayout>
+
+                    <!--Native Address Input -->
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/val_4dp"
+                            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tlAddressNativePlaceName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="16dp"
+                        >
+                            <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/etAddressNativePlaceName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:hint="Native Place"
+                                    android:imeOptions="actionNext"
+                                    android:textSize="@dimen/val_textView_20sp"
+                                    android:textColor="@color/text_color"
+                                    android:inputType="textPostalAddress"
+                                    android:maxLength="20"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                                android:id="@+id/tlAddressNativePinCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="16dp"
+                        >
+                            <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/etAddressNativePinCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:hint="Native Postal Code"
+                                    android:inputType="number"
+                                    android:imeOptions="actionNext"
+                                    android:textSize="@dimen/val_textView_20sp"
+                                    android:textColor="@color/text_color"
+                                    android:maxLength="6"/>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <Button
+                            android:id="@+id/btnRegisterPage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="@dimen/val_12dp"
+                            android:background="@drawable/bg_round_fill_orange"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/regster"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <!--OTP Screen : Third Screen-->
+            <RelativeLayout
+                    android:id="@+id/rlOTPVerification"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginTop="45dp"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12sp"
+                        android:id="@+id/ll_label_1"
+                        android:orientation="horizontal">
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/verification"
+                            android:textColor="@color/colorOrange"
+                            android:textSize="30sp"/>
+
+                    <ImageButton
+                            android:id="@+id/ibtnOTPVerification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:padding="8dp"
+                            app:srcCompat="@drawable/ic_close"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ll_otp"
+                        android:layout_marginTop="25dp"
+                        android:layout_below="@id/ll_label_1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tvVerificationCodeTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/enter_verification_code"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="19sp"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="1234567890"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/txt_number"
+                            android:textSize="18sp"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/verification_code"
+                            android:textColor="@color/colorOrange"
+                            android:textSize="14sp"/>
+
+                    <com.uj.myapplications.customwidgets.OTPView
+                            android:id="@+id/editotpview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_margin="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_otp"
+                        android:layout_marginTop="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical">
+                    <Button
+                            android:id="@+id/btnContinue"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_round_fill_orange"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/continuebtn"
+                            android:textAllCaps="false"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+
+                    <Button
+                            android:id="@+id/btnResendVerificationCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/val_16dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/resend_code"
+                            android:textColor="@color/colorGrey"
+                            android:textAllCaps="false"
+                            android:background="@android:color/transparent"
+                            android:textSize="17sp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Ends Third Screen -->
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
